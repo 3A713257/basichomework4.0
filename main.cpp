@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+	int totalsec,sec,min,hr;
+	printf("Please enter second(s):");
+	scanf("%d",&totalsec);
+	hr = totalsec/3600;
+	min = (totalsec%3600)/60;
+	sec = totalsec%60;
+	printf("Your time is: %d hour(s) %d minute(s) %d second(s)\n",hr,min,sec);
+	system("pause");
+	return 0;
+}
